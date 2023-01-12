@@ -70,52 +70,53 @@ renders["day"] = {
     "markers": markers,
     "rendermode": "smooth_lighting",
     "world": "minecraft",
+    'crop': (-1000, -1000, 1000, 1000),
 }
 
-renders["night"] = {
-    "title": "Night",
-    "dimension": "overworld",
-    "markers": markers,
-    "rendermode": "smooth_night",
-    "world": "minecraft",
-}
+# renders["night"] = {
+#     "title": "Night",
+#     "dimension": "overworld",
+#     "markers": markers,
+#     "rendermode": "smooth_night",
+#     "world": "minecraft",
+# }
 
-renders["nether"] = {
-    "title": "Nether",
-    "dimension": "nether",
-    "markers": markers,
-    "rendermode": "nether_smooth_lighting",
-    "world": "minecraft",
-}
+# renders["nether"] = {
+#     "title": "Nether",
+#     "dimension": "nether",
+#     "markers": markers,
+#     "rendermode": "nether_smooth_lighting",
+#     "world": "minecraft",
+# }
 
-renders["end"] = {
-    "title": "End",
-    "dimension": "end",
-    "markers": markers,
-    "rendermode": [Base(), EdgeLines(), SmoothLighting(strength=0.5)],
-    "world": "minecraft",
-}
+# renders["end"] = {
+#     "title": "End",
+#     "dimension": "end",
+#     "markers": markers,
+#     "rendermode": [Base(), EdgeLines(), SmoothLighting(strength=0.5)],
+#     "world": "minecraft",
+# }
 
-renders["overlay_biome"] = {
-    "title": "Biome Coloring Overlay",
-    "dimension": "overworld",
-    "overlay": ["day"],
-    "rendermode": [ClearBase(), BiomeOverlay()],
-    "world": "minecraft",
-}
+# renders["overlay_biome"] = {
+#     "title": "Biome Coloring Overlay",
+#     "dimension": "overworld",
+#     "overlay": ["day"],
+#     "rendermode": [ClearBase(), BiomeOverlay()],
+#     "world": "minecraft",
+# }
 
-renders["overlay_mobs"] = {
-    "title": "Mob Spawnable Areas Overlay",
-    "dimension": "overworld",
-    "overlay": ["day"],
-    "rendermode": [ClearBase(), SpawnOverlay()],
-    "world": "minecraft",
-}
+# renders["overlay_mobs"] = {
+#     "title": "Mob Spawnable Areas Overlay",
+#     "dimension": "overworld",
+#     "overlay": ["day"],
+#     "rendermode": [ClearBase(), SpawnOverlay()],
+#     "world": "minecraft",
+# }
 
-renders["overlay_slime"] = {
-    "title": "Slime Chunk Overlay",
-    "dimension": "overworld",
-    "overlay": ["day"],
-    "rendermode": [ClearBase(), SlimeOverlay()],
-    "world": "minecraft",
-}
+# renders["overlay_slime"] = {
+#     "title": "Slime Chunk Overlay",
+#     "dimension": "overworld",
+#     "overlay": ["day"],
+#     "rendermode": [ClearBase(), SlimeOverlay()],
+#     "world": "minecraft",
+# }
