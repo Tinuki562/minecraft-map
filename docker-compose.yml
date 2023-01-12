@@ -7,10 +7,10 @@ services:
     stdin_open: true
     tty: true
     env_file: .env
-    # environment:
-    #  - RACK_ENV=.env
-    #  - SHOW=true
-    #  - USER_INPUT
+    environment:
+      MINECRAFT_VERSION: "1.19"
+      FTP_USERNAME: ${FTP_USERNAME}
+      FTP_PASS: ${FTP_PASS}
     image: minecraft_map
     container_name: minecraft_map
     volumes:
