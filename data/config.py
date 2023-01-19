@@ -70,16 +70,15 @@ renders["day"] = {
     "markers": markers,
     "rendermode": "smooth_lighting",
     "world": "minecraft",
-    'crop': (-1000, -1000, 1000, 1000),
 }
 
-# renders["night"] = {
-#     "title": "Night",
-#     "dimension": "overworld",
-#     "markers": markers,
-#     "rendermode": "smooth_night",
-#     "world": "minecraft",
-# }
+renders["night"] = {
+    "title": "Night",
+    "dimension": "overworld",
+    "markers": markers,
+    "rendermode": "smooth_night",
+    "world": "minecraft",
+}
 
 # renders["nether"] = {
 #     "title": "Nether",
