@@ -13,6 +13,7 @@ services:
       DOWNLOAD_WORLD: ${DOWNLOAD_WORLD}
     image: minecraft_map
     container_name: minecraft_map
+    network_mode: host
     volumes:
      - ./data/:/home/minecraft/.minecraft/
      - ./output/:/home/minecraft/output/
