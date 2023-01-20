@@ -70,6 +70,7 @@ renders["day"] = {
     "markers": markers,
     "rendermode": "smooth_lighting",
     "world": "minecraft",
+    "crop": (-10000, -10000, 10000, 10000),
 }
 
 renders["night"] = {
@@ -78,6 +79,7 @@ renders["night"] = {
     "markers": markers,
     "rendermode": "smooth_night",
     "world": "minecraft",
+    "crop": (-10000, -10000, 10000, 10000),
 }
 
 # renders["nether"] = {
