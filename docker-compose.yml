@@ -8,14 +8,15 @@ services:
     environment:
       MINECRAFT_VERSION: "1.19"
       CONFIG_LOCATION: /home/minecraft/.minecraft/config.py
-      FTP_USERNAME: ${FTP_USERNAME}
-      FTP_PASS: ${FTP_PASS}
       DOWNLOAD_WORLD: ${DOWNLOAD_WORLD}
     image: minecraft_map
     container_name: minecraft_map
     network_mode: host
     volumes:
      - ./data/:/home/minecraft/.minecraft/
+     - /home/mc-map-user/server/deadmines/:/home/minecraft/server/deadmines/
+     - /home/mc-map-user/server/deadmines_nether/:/home/minecraft/server_nether/deadmines/
+     - /home/mc-map-user/server/deadmines_the_end/:/home/minecraft/server_the_end/deadmines/
      - ./output/:/home/minecraft/output/
     # Uncomment following when you want to persist world data
     #  - ./server/:/home/minecraft/server/

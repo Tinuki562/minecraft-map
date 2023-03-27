@@ -55,9 +55,12 @@ def signFilter(poi):
             return html.escape(os.environ["RENDER_SIGNS_JOINER"].join(lines))
 
 
-worlds["minecraft"] = "/home/minecraft/server/world"
-outputdir = "/home/minecraft/output/"
-texturepath = "/home/minecraft/.minecraft/versions/1.19/1.19.jar"
+worlds["minecraft"] = "/home/minecraft/server/deadmines"
+worlds["minecraft_nether"] = "/home/minecraft/server_nether/deadmines"
+worlds["minecraft_the_end"] = "/home/minecraft/server_the_end/deadmines"
+ outputdir = "/home/minecraft/output/"
+ texturepath = "/home/minecraft/.minecraft/versions/1.19/1.19.jar"
+customwebassets = "/home/minecraft/assets/"
 
 markers = [
     dict(name="Players", filterFunction=playerIcons),
@@ -82,21 +85,23 @@ renders["night"] = {
     "crop": (-10000, -10000, 10000, 10000),
 }
 
-# renders["nether"] = {
-#     "title": "Nether",
-#     "dimension": "nether",
-#     "markers": markers,
-#     "rendermode": "nether_smooth_lighting",
-#     "world": "minecraft",
-# }
+renders["nether"] = {
+    "title": "Nether",
+    "dimension": "nether",
+    "markers": markers,
+    "rendermode": "nether_smooth_lighting",
+    "world": "minecraft_nether",
+    "crop": (-10000, -10000, 10000, 10000),
+}
 
-# renders["end"] = {
+#renders["end"] = {
 #     "title": "End",
 #     "dimension": "end",
 #     "markers": markers,
 #     "rendermode": [Base(), EdgeLines(), SmoothLighting(strength=0.5)],
-#     "world": "minecraft",
-# }
+#     "world": "minecraft_the_end",
+#     "crop": (-10000, -10000, 10000, 10000),
+#}
 
 # renders["overlay_biome"] = {
 #     "title": "Biome Coloring Overlay",
